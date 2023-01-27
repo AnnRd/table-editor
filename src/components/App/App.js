@@ -33,9 +33,9 @@ function App() {
   return (
     <div className={s.wrapper}>
       <div className={s.content}>
-        <Table />
+        <Table users={user} setEditableUserData={setEditableUserData} setInputValue={setInputValue} setUser={setUser}/>
         <div>
-          <Form />
+          <Form editableUserData={editableUserData} users={user} inputValue={inputValue} setEditableUserData={setEditableUserData} setInputValue={setInputValue} setUser={setUser}/>
         </div>
       </div>
     </div>
